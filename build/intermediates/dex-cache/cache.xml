@@ -2,67 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\PRAGYA\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_7f81eff528eda568c75ff34bf985dd61cfa632c9\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_0495290bd6764998275a64c7b13645283cb578d1\classes.dex" />
-    </item>
-    <item
         jar="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="b87904528ed68c0f6742e4f01dbd54614cd9edfb">
+        sha1="0fa49e9e4783c1c25ad7aa38cf3df8400dc58441">
         <dex dex="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ab4751f3a0da7c76edc286017485284b6073bb76\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_db3c3b40f07f3f54f57674acd70771798510acf0\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_05835938856d2d5061c4ba22cd6a9ddc87f5d75e\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="ee786445e4697fac80ecedb26e0425d9b73503bb">
-        <dex dex="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a4600c1e8ef54eb07bfe6668de3d836a6f812bcb\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_2dd5aeb4ce22b2991fd71d67ab0a9b0377d5cba7\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_5fcba5535e35f523434b8b7d8ee37b7ae999019e\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\PRAGYA\Documents\GitHub\FileSizeFinder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_118b27c05934f6958bb33da06a995d4c22497bf9\classes.dex" />
     </item>
 
 </items>

@@ -7,4 +7,5 @@
     <string name="average_file_size_heading">Average File Size:</string>
     <string name="frequent_extension_heading">Five most frequent extensions:</string>
     <string name="top_files_heading">Top Files</string>
+    <string name="share_title">share</string>
 </resources>
