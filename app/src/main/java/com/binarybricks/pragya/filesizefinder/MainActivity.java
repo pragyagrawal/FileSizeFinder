@@ -34,9 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
     private ShareActionProvider mShareActionProvider;
     private MenuItem resultShare;
+    private Intent shareIntent;
     private String shareAverage = "Average File Size: ";
     private String shareTopExtension = "Top Extensions are: ";
     private String shareTopFiles = "Biggest Files are: ";
+    private String shareTopExtensionData = "";
+    private String shareTopFilesData = "";
     private String shareMessage;
 
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -55,15 +58,19 @@ public class MainActivity extends AppCompatActivity {
             if (!TextUtils.isEmpty(avgFileSize) && tvAvgFileSize != null) {
                 tvAvgFileSize.setText(avgFileSize + " MB");
             }
-            ArrayList<FileProperties> fileList = intent.getParcelableArrayListExtra(FileScanService.TOP_FILES);
 
+            ArrayList<FileProperties> fileList = intent.getParcelableArrayListExtra(FileScanService.TOP_FILES);
             if (fileList != null && lvTopFileList != null) {
                 mAdapter = new TopFileListAdapter(MainActivity.this, fileList);
                 lvTopFileList.setAdapter(mAdapter);
             }
 
-            ArrayList<FileProperties> fileExtensionList = intent.getParcelableArrayListExtra(FileScanService.TOP_EXTENSION);
+            //add file extension data to share message
+            for (FileProperties fileProperties : fileList) {
+                shareTopFilesData = shareTopFilesData+fileProperties.getFileName()+" - "+(fileProperties.getFileSize()/(1024*1024))+" MB\n";
+            }
 
+            ArrayList<FileProperties> fileExtensionList = intent.getParcelableArrayListExtra(FileScanService.TOP_EXTENSION);
             if (fileList != null && llMostFrequentExtension != null) {
                 LayoutInflater inflator = LayoutInflater.from(MainActivity.this);
 
@@ -73,9 +80,15 @@ public class MainActivity extends AppCompatActivity {
                     ((TextView) view.findViewById(R.id.tvExtension)).setText(fileProperties.getFileExtention());
                     ((TextView) view.findViewById(R.id.tvNoOfFiles)).setText(fileProperties.getFileSize() + " files"); //it is not filesize but since we are reusing parcelable
                     llMostFrequentExtension.addView(view);
+                    shareTopExtensionData = shareTopExtensionData+fileProperties.getFileExtention()+" and "+fileProperties.getFileSize()+" files\n";
                 }
             }
-            shareMessage = shareAverage+avgFileSize+"\n"+shareTopExtension+fileExtensionList+"\n"+shareTopFiles+fileList;
+
+            //add file extension data to share message
+            shareMessage = shareAverage+avgFileSize+" MB\n"+shareTopExtension+"\n"+shareTopExtensionData+"\n"+shareTopFiles+"\n"+shareTopFilesData;
+
+            shareIntent.putExtra(Intent.EXTRA_TEXT,shareMessage);
+
             deregitserBroadcast();
         }
     };
@@ -109,10 +122,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
     private Intent createShareIntent(){
-        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
         shareIntent.setType("text/plain");
-        shareIntent.putExtra(Intent.EXTRA_TEXT,shareMessage);
         return shareIntent;
     }
 
