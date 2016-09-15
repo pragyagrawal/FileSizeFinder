@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FileSizeFinder</string>
+    <string name="notification_title">File Size Finder</string>
+    <string name="notification_text">Scanning.....</string>
+    <string name="button_start_scan">Start Scan</string>
+    <string name="button_stop_scan">STOP Scan</string>
+    <string name="average_file_size_heading">Average File Size:</string>
+    <string name="frequent_extension_heading">Five most frequent extensions:</string>
+    <string name="top_files_heading">Top Files</string>
+</resources>
