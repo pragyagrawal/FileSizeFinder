@@ -11,8 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
-            android:launchMode="singleTop"
-            android:configChanges="keyboardHidden|orientation">
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,8 +22,7 @@
         <service
             android:name=".FileScanService"
             android:enabled="true"
-            android:exported="true"
-            android:configChanges="keyboardHidden|orientation"></service>
+            android:exported="true"></service>
     </application>
 
 </manifest>
