@@ -31,9 +31,9 @@ public class FileScanService extends Service {
     private Map<String, Integer> extensionMap;
     private BigDecimal sum = BigDecimal.ZERO;
 
-    private String AVERAGE = "average";
-    private String TOP_FILES= "TopFiles";
-    private String TOP_EXTENSION = "TopExtension";
+    public static final String AVERAGE = "average";
+    public static final String TOP_FILES= "TopFiles";
+    public static final String TOP_EXTENSION = "TopExtension";
 
     private static final String LOG_TAG = "ForegroundService";
     public static boolean IS_SERVICE_RUNNING = false;

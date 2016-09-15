@@ -37,18 +37,18 @@ public class MainActivity extends AppCompatActivity {
                 FileScanService.IS_SERVICE_RUNNING = false;
                 btnStartService.setText(R.string.button_start_scan);
             }
-            String avgFileSize = intent.getStringExtra("average");
+            String avgFileSize = intent.getStringExtra(FileScanService.AVERAGE);
             if (!TextUtils.isEmpty(avgFileSize) && tvAvgFileSize!=null){
                 tvAvgFileSize.setText(avgFileSize +" MB");
             }
-            ArrayList<FileProperties> fileList = intent.getParcelableArrayListExtra("TopFiles");
+            ArrayList<FileProperties> fileList = intent.getParcelableArrayListExtra(FileScanService.TOP_FILES);
 
             if(fileList!=null && lvTopFileList!=null) {
                 mAdapter = new TopFileListAdapter(MainActivity.this,fileList);
                 lvTopFileList.setAdapter(mAdapter);
             }
 
-            ArrayList<FileProperties> fileExtensionList = intent.getParcelableArrayListExtra("TopExtension");
+            ArrayList<FileProperties> fileExtensionList = intent.getParcelableArrayListExtra(FileScanService.TOP_EXTENSION);
 
             if(fileList!=null && llMostFrequentExtension!=null) {
                 LayoutInflater inflator = LayoutInflater.from(MainActivity.this);
